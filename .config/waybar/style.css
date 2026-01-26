@@ -1,4 +1,6 @@
-@import 'one-dark.css';
+/* @import 'one-dark.css'; */
+@import 'gruvbox.css';
+
 
 * {
     border: none;
@@ -56,10 +58,10 @@ tooltip label {
 
 #workspaces button:hover {
     color: @bg0;
+    background-color: @purple;
     border-radius: 18px;
     min-width: 50px;
     background-size: 400% 400%;
-    padding: 1px;
 }
 
 #workspaces button.urgent {
@@ -87,9 +89,13 @@ tooltip label {
 #custom-notification {
     margin-right: 12px;
 }
+
+#battery{
+    color: @green;
+}
 #battery.charging {
     background-color: @green;
-    color: white;
+    color: @fg;
 }
 
 #battery.discharging.warning {
@@ -98,7 +104,7 @@ tooltip label {
 
 #battery.discharging.critical {
     background-color: @red;
-    color: white;
+    color: @fg;
 }
 
 #network {
