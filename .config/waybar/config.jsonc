@@ -1,6 +1,8 @@
 {
     "position": "top",
     "margin-top": 5,
+    "margin-left": 5,
+    "margin-right": 20,
     "modules-left": ["custom/archicon","clock"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
@@ -13,7 +15,7 @@
     "clock": {
 	"interval": 1,
 	"tooltip": true,
-	"tooltip-format": "{:%F}",
+	"tooltip-format": "{:%A,\n%F}",
 	"format-alt": "{:%H:%M:%S}",
 	"format": "{:%I:%M %p}",
 	"max-length": 25
@@ -54,7 +56,7 @@
     "network": {
 	"interface": "wlp2s0",
 	"format": "{ifname}",
-	"format-wifi": " {essid} ({signalStrength}%)",
+	"format-wifi": " {essid}",
 	"format-ethernet": "{ipaddr}/{cidr} 󰊗",
 	"format-disconnected": "", //An empty format will hide the module.
 	"tooltip-format": "{ifname} via {gwaddr} 󰊗",

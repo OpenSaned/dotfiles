@@ -23,10 +23,13 @@ tooltip {
     border: 1px solid @bg3;
     border-radius: 12px;
 }
+tooltip decoration {
+	background-color: transparent;
+}
 
 tooltip label {
-    color: @fg;
-    padding: 6px;
+    color: @fg0;
+    padding: 1px;
 }
 
 #workspaces {
@@ -35,7 +38,7 @@ tooltip label {
     margin: 0 0 0 12px;
     border-radius: 18px;
     border: 1px solid @bg1;
-    /* color: @fg; */
+    /* color: @fg0; */
     /* color: green; */
 }
 
@@ -45,14 +48,14 @@ tooltip label {
     border-radius: 50px;
     color: transparent;
     background-color: @bg1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #workspaces button.active {
     background-color: @blue;
     color: @bg0;
     min-width: 50px;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.2s ease-in-out;
     font-size: 13px;
 }
 
@@ -70,7 +73,7 @@ tooltip label {
     border-radius: 16px;
     min-width: 50px;
     background-size: 400% 400%;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #battery,
@@ -86,16 +89,18 @@ tooltip label {
     border: 1px solid @bg1;
 }
 
-#custom-notification {
-    margin-right: 12px;
-}
+/* #custom-notification { */
+/*     margin-right: 12px; */
+/* } */
 
 #battery{
     color: @green;
+    border: 0;
 }
+
 #battery.charging {
     background-color: @green;
-    color: @fg;
+    color: @fg1;
 }
 
 #battery.discharging.warning {
@@ -104,7 +109,7 @@ tooltip label {
 
 #battery.discharging.critical {
     background-color: @red;
-    color: @fg;
+    color: @fg1;
 }
 
 #network {
@@ -120,5 +125,5 @@ tooltip label {
 }
 #pulseaudio,
 #clock {
-    color: @fg;
+    color: @fg0;
 }

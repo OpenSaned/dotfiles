@@ -1,5 +1,4 @@
 # If you come from bash you might have to change your $PATH.
-bind = $mainMod, H, exec, ~/.config/waybar/launch.sh
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
