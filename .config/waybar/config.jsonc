@@ -3,7 +3,7 @@
     "margin-top": 5,
     "margin-left": 5,
     "margin-right": 20,
-    "modules-left": ["custom/archicon","clock"],
+    "modules-left": ["custom/archicon","clock","temperature"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
 	"tray",
@@ -55,6 +55,7 @@
     },
     "network": {
 	"interface": "wlp2s0",
+	"on-click": "nmgui",
 	"format": "{ifname}",
 	"format-wifi": " {essid}",
 	"format-ethernet": "{ipaddr}/{cidr} 󰊗",
@@ -109,5 +110,12 @@
 	"on-click": "swaync-client -t -sw",
 	"on-click-right": "swaync-client -d -sw",
 	"escape": true
+    },
+    "temperature": {
+	// "thermal-zone": 2,
+	// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+	"critical-threshold": 80,
+	// "format-critical": "{temperatureC}°C ",
+	"format": "{temperatureC}°C "
     },
 }

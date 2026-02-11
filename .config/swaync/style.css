@@ -10,7 +10,7 @@
   color: @text;
   all: unset;
   font-size: 0.95rem;
-  font-family: "CaskaydiaCove Nerd Font Propo";
+  font-family: "GeistMono Nerd Font Propo";
   transition: 200ms;
   font-weight: 700;
 }

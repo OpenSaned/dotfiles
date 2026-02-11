@@ -43,11 +43,11 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 0px 6px;
+    padding: 0px 5px;
     margin: 0px 3px;
     border-radius: 50px;
     color: transparent;
-    background-color: @bg1;
+    background-color: @bg3;
     transition: all 0.2s ease-in-out;
 }
 
@@ -80,6 +80,7 @@ tooltip label {
 #pulseaudio,
 #network,
 #clock,
+#temperature,
 #custom-archicon,
 #custom-notification {
     background-color: @bg0;
@@ -99,8 +100,9 @@ tooltip label {
 }
 
 #battery.charging {
+    border: 2px solid @bg1;
     background-color: @green;
-    color: @fg1;
+    color: @bg0;
 }
 
 #battery.discharging.warning {
@@ -108,6 +110,19 @@ tooltip label {
 }
 
 #battery.discharging.critical {
+    background-color: @red;
+    color: @fg1;
+}
+
+#temperature {
+    color: @green;
+}
+
+#temperature.warning {
+    color: @orange
+}
+
+#temperature.critical {
     background-color: @red;
     color: @fg1;
 }

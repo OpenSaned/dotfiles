@@ -117,6 +117,7 @@ pathadd() {
 pathadd "$PWD/.local/bin/"
 
 alias vim='nvim'
+alias cat='bat'
 alias sudo='sudo '
 clear && fastfetch && echo && echo
 
