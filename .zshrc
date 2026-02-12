@@ -103,6 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias vim='nvim'
+alias cat='bat'
+alias sudo='sudo '
+alias nvim=~/.local/bin/padded_nvim.sh
 pathadd() {
     newelement=${1%/}
     if [ -d "$1" ] && ! echo $PATH | grep -E -q "(^|:)$newelement($|:)" ; then
@@ -116,9 +120,6 @@ pathadd() {
 
 pathadd "$PWD/.local/bin/"
 
-alias vim='nvim'
-alias cat='bat'
-alias sudo='sudo '
 clear && fastfetch && echo && echo
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

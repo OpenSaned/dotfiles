@@ -21,7 +21,7 @@ end, { desc = 'Open Neovim config in Neotree' })
 
 map('n', '<leader>e', '<Cmd>Neotree toggle<CR>', { desc = "Open File Explorer", silent = true })
 
-map('n', '<C-l>', '<C-w>w', { desc = 'Switch to next Window'})
+map('n', '<A-l>', '<C-w>w', { desc = 'Switch to next Window'})
 -- map('n', '<A-l>', function()
 --     local ft = vim.bo.filetype
 --     if ft == 'neo-tree' then

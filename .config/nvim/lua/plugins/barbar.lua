@@ -8,9 +8,8 @@ return {
     opts = {
 	animation = true,
 	sidebar_filetypes = {
-	    ['neo_tree'] = {
-		    event = 'BufWipeout'
-	    },
+	    -- NvimTree = true,
+	    ['neo-tree'] = { event = 'BufWipeout' },
 	},
 
     },
