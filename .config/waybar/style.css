@@ -125,6 +125,7 @@ tooltip label {
 #temperature.critical {
     background-color: @red;
     color: @fg1;
+    border: 0;
 }
 
 #network {
