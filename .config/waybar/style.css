@@ -37,7 +37,7 @@ tooltip label {
     padding: 5px 3px;
     margin: 0 0 0 12px;
     border-radius: 18px;
-    border: 1px solid @bg1;
+    /* border: 1px solid @bg1; */
     /* color: @fg0; */
     /* color: green; */
 }
@@ -86,8 +86,9 @@ tooltip label {
     background-color: @bg0;
     padding: 0 15px 0 15px;
     margin: 0 0 0 12px;
-    border-radius: 50px;
-    border: 1px solid @bg1;
+    border-radius: 30px;
+    /* border: 1px solid @bg1; */
+    font-size: 15px;
 }
 
 /* #custom-notification { */

@@ -23,6 +23,7 @@ reboot=' Reboot'
 lock=' Lock'
 suspend=' Suspend'
 logout=' Logout'
+windows='  Windows'
 yes=' Yes'
 no=' No'
 
@@ -54,7 +55,7 @@ confirm_exit() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown\n$windows" | rofi_cmd
 }
 
 # Execute Command
@@ -106,5 +107,8 @@ case ${chosen} in
         ;;
     $logout)
 		run_cmd --logout
+        ;;
+    $windows)
+		pkexec ~/.scripts/RebootToWindows.sh
         ;;
 esac

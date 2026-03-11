@@ -69,7 +69,7 @@ textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
     str:                         "";
-    padding:                     10px 14px;
+    padding:                     10px 15px 10px 13px;
     border-radius:               10px;
     background-color:            @urgent;
     text-color:                  @background;
@@ -115,7 +115,7 @@ error-message {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       5;
+    lines:                       6;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;

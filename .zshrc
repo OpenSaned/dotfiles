@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export EDITOR="nvim"
+export SUDO_EDITOR="nvim"
+
 alias vim='nvim'
 alias cat='bat'
 alias sudo='sudo '
@@ -117,7 +120,7 @@ pathadd() {
         fi
     fi
 }
-
+pathadd "$PWD/.cargo/bin"
 pathadd "$PWD/.local/bin/"
 
 clear && fastfetch && echo && echo
