@@ -43,7 +43,7 @@
   "mpvpaper_additional_options_doc": "Custom options for mpvpaper passed as command line arguments.",
   "mpvpaper_additional_options": "",
   "selected_monitor_item_doc": "The currently selected monitor as a string. Note: The name must coincide with the monitor numeric identifier.",
-  "selected_monitor_item": "",
+  "selected_monitor_item": "All",
   "swww_resize_doc": "The internal numeric identifier in the changer dropdown used by dconf for the currently selected swww resize option. Do not change unless you know what you are doing.",
   "swww_resize": 0,
   "swww_fill_color_doc": "The hex color for swww background fill. Must be six characters long.",
