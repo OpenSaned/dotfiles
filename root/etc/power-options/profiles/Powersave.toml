@@ -1,0 +1,75 @@
+profile_name = "Powersave"
+base_profile = "Powersave"
+
+[sleep_settings]
+
+[cpu_settings]
+mode = "active"
+governor = "powersave"
+energy_perf_ratio = "balance_power"
+min_freq = 400
+max_freq = 1200
+min_perf_pct = 0
+max_perf_pct = 100
+boost = false
+hwp_dyn_boost = false
+
+[cpu_core_settings]
+
+[screen_settings]
+
+[radio_settings]
+block_wifi = false
+block_nfc = false
+block_bt = false
+
+[network_settings]
+disable_ethernet = false
+
+[aspm_settings]
+mode = "powersave"
+
+[pci_settings]
+enable_power_management = true
+
+[pci_settings.whiteblacklist]
+items = []
+list_type = "Blacklist"
+
+[usb_settings]
+enable_pm = true
+autosuspend_delay_ms = 10000
+
+[usb_settings.whiteblacklist]
+items = []
+list_type = "Blacklist"
+
+[sata_settings]
+active_link_pm_policy = "med_power_with_dipm"
+
+[kernel_settings]
+disable_nmi_watchdog = true
+vm_writeback = 45
+laptop_mode = 5
+
+[firmware_settings]
+platform_profile = "low-power"
+
+[audio_settings]
+idle_timeout = 5
+
+[gpu_settings]
+intel_min = 100
+intel_max = 1020
+intel_boost = 1000
+
+[rapl_settings.package]
+long_term_limit = 35
+short_term_limit = 55
+peak_power_limit = 114
+
+[rapl_settings.core]
+long_term_limit = 0
+
+[rapl_settings.uncore]
+long_term_limit = 0

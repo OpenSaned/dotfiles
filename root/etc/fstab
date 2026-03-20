@@ -1,0 +1,27 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p5
+UUID=abac2e79-dae2-4a1f-8e2e-157073a46a2d	/         	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@	0 0
+
+# /dev/nvme0n1p5
+UUID=abac2e79-dae2-4a1f-8e2e-157073a46a2d	/home     	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
+
+# /dev/nvme0n1p5
+UUID=abac2e79-dae2-4a1f-8e2e-157073a46a2d	/swap     	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@swap	0 0
+
+# /dev/nvme0n1p5
+UUID=abac2e79-dae2-4a1f-8e2e-157073a46a2d	/.snapshots	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@snapshots	0 0
+
+# /dev/nvme0n1p5
+UUID=abac2e79-dae2-4a1f-8e2e-157073a46a2d	/var/log  	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@var_log	0 0
+
+# /dev/nvme0n1p5
+UUID=abac2e79-dae2-4a1f-8e2e-157073a46a2d	/var/cache	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@var_cache	0 0
+
+# /dev/nvme0n1p1
+UUID=4E7C-2BA6      	/efi      	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+/swap/swapfile      	none      	swap      	defaults  	0 0
+

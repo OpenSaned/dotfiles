@@ -1,0 +1,8 @@
+ac_profile = "Performance"
+bat_profile = "Balanced"
+profiles = [
+    "Powersave",
+    "Balanced",
+    "Performance",
+    "Performance++",
+]

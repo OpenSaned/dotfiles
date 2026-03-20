@@ -1,3 +1,4 @@
+@define-color center-bg       rgba(27, 27, 27, 0.9);
 @define-color background      #1D2021;
 @define-color text            #89B482;
 @define-color text-alt        #7DAEA3;
@@ -10,7 +11,7 @@
   color: @text;
   all: unset;
   font-size: 0.95rem;
-  font-family: "GeistMono Nerd Font Propo";
+  font-family: "CaskaydiaCove Nerd Font Propo";
   transition: 200ms;
   font-weight: 700;
 }
@@ -23,7 +24,7 @@
 }
 
 .notification-background {
-  background: @background;
+  background: @center-bg;
   box-shadow: none;
   border-radius: 15px;
   margin: 8px;
@@ -111,8 +112,8 @@
 }
 
 .control-center {
-  background: @background;
-  border-radius: 25px;
+  background: @center-bg;
+  border-radius: 15px;
   margin: 5px;
   padding: 12px;
 }
@@ -297,7 +298,6 @@
 
 .widget-buttons-grid button > label {
   font-size: 16px;
-  padding-right: 5px;
   color: @text;
 }
 
