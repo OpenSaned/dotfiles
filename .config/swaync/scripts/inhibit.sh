@@ -1,1 +1,1 @@
-../../../.local/bin/caffeine
+/home/on/.local/bin/caffeine
