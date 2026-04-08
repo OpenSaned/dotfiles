@@ -14,7 +14,7 @@ return {
     {
 	-- Main LSP Configuration
 	'neovim/nvim-lspconfig',
-	enabled = false,
+	enabled = true,
 	dependencies = {
 	    { 'mason-org/mason.nvim', opts = {} },
 	    'mason-org/mason-lspconfig.nvim',
