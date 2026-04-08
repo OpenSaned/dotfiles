@@ -9,14 +9,14 @@
       "monitor": "",
       "path": "",
       "changer": {
-        "Hyprpaper": "Contain"
+        "Hyprpaper": "Cover"
       }
     },
     {
       "monitor": "All",
-      "path": "/home/on/Pictures/Wallpapers/anime_girl_plus_rockets.png",
+      "path": "/home/on/Pictures/Wallpapers/mountains.jpg",
       "changer": {
-        "Hyprpaper": "Contain"
+        "Hyprpaper": "Cover"
       }
     }
   ],

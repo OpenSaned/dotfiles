@@ -3,7 +3,13 @@
     "margin-top": 5,
     "margin-left": 5,
     "margin-right": 20,
-    "modules-left": ["custom/archicon","clock","temperature"],
+    "modules-left": [
+	"custom/archicon",
+	"clock",
+	"temperature",
+	"cpu",
+	"memory"
+    ],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
 	"tray",
@@ -56,11 +62,12 @@
     },
     "network": {
 	"interface": "wlan0",
+	"interval": 5,
 	"on-click": "nmgui",
 	"format": "{ifname}",
 	"format-wifi": " {essid}",
 	"format-ethernet": "{ipaddr}/{cidr} 󰊗",
-	"format-disconnected": "", //An empty format will hide the module.
+	"format-disconnected": "⊘", //An empty format will hide the module.
 	"tooltip-format": "{ifname} via {gwaddr} 󰊗",
 	"tooltip-format-wifi": "{essid} ({signalStrength}%) \n{ipaddr}",
 	"tooltip-format-ethernet": "{ifname} ",
@@ -120,4 +127,23 @@
 	// "format-critical": "{temperatureC}°C ",
 	"format": "{temperatureC}°C "
     },
+    "cpu": {
+      "interval": 2,
+      "format": "<span font='13'>󰍛</span> {usage:>1}%",
+      "states": {
+	"warning": 70,
+	"critical": 90
+      },
+      "on-click": "kitty -e btop"
+    },
+    "memory": {
+      "interval": 5,
+      "format": "<span font='11'></span> {percentage:>2}%",
+      "states": {
+	"warning": 70,
+	"critical": 90
+      },
+      "tooltip-format": "{used:0.1f}G / {total:0.1f}G",
+      "on-click": "kitty -e btop"
+    }
 }
