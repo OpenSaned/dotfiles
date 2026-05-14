@@ -1,8 +1,8 @@
 {
     "position": "top",
-    "margin-top": 5,
-    "margin-left": 5,
-    "margin-right": 20,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
     "modules-left": [
 	"custom/archicon",
 	"clock",
@@ -32,7 +32,7 @@
 	"on-click": "~/.config/rofi/powermenu/type-1/powermenu.sh"
     },
     "tray": {
-	"icon-size": 21,
+	"icon-size": 15,
 	"spacing": 10,
 	"icons": {
 	    "blueman": "bluetooth",

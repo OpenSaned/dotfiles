@@ -18,6 +18,8 @@ if [ -f "$STATE_FILE" ]; then
     done
     rm "$STATE_FILE"
     notify-send "serious mode is off bruh 🥀"
+    pkill waybar 
+    waybar
 
 else
     declare -A toStore
@@ -30,6 +32,8 @@ else
 	hyprctl keyword $prop 0
 
     done
+    pkill waybar
+    waybar --config ~/.config/waybar/serious/config.jsonc --style ~/.config/waybar/serious/style.css &
     notify-send "SERIOUS MODE IS ON 😈"
     declare -p toStore > $STATE_FILE
 fi

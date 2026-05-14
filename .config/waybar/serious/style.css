@@ -1,0 +1,160 @@
+/* @import 'one-dark.css'; */
+@import '../gruvbox.css';
+
+
+* {
+    border: none;
+    border-radius: 0px;
+
+    font-family: "geistmono nerd font propo";
+    font-weight: bold;
+
+    min-height: 0;
+    margin: -2;
+    padding: 0;
+}
+
+window#waybar {
+    /* background: transparent; */
+}
+
+tooltip {
+    background: @bg0;
+    border: 1px solid @bg3;
+    border-radius: 12px;
+}
+tooltip decoration {
+	background-color: transparent;
+    /* border-radius: 18px; */
+    /* border: 1px solid @bg1; */
+    /* color: @fg0; */
+    /* color: green; */
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 9px 3px;
+    /* border-radius: 50px; */
+    color: transparent;
+    background-color: @bg3;
+    transition: all 0.2s ease-in-out;
+    font-size: 10px;
+}
+
+#workspaces button.active {
+    background-color: @blue;
+    color: @bg0;
+    min-width: 50px;
+    transition: all 0.2s ease-in-out;
+    font-size: 12px;
+}
+
+#workspaces button:hover {
+    color: @bg0;
+    background-color: @purple;
+    /* border-radius: 18px; */
+    min-width: 50px;
+    background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @bg0;
+    /* border-radius: 16px; */
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.2s ease-in-out;
+}
+
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#temperature,
+#custom-archicon,
+#cpu,
+#memory,
+#custom-notification {
+    background-color: @bg0;
+    padding: 0 10px 0 15px;
+    margin: 0 0 0 12px;
+    /* border-radius: 30px; */
+    /* border: 1px solid @bg1; */
+    font-size: 15px;
+}
+
+/* #custom-notification { */
+/*     margin-right: 12px; */
+/* } */
+
+#battery{
+    color: @green;
+    border: 0;
+}
+
+#battery.charging {
+    border: 2px solid @bg1;
+    background-color: @green;
+    color: @bg0;
+}
+
+#battery.discharging.warning {
+    color: @orange;
+}
+
+#battery.discharging.critical {
+    background-color: @red;
+    color: @fg1;
+}
+
+#temperature {
+    color: @green;
+}
+
+#temperature.warning {
+    color: @orange
+}
+
+#temperature.critical {
+    background-color: @red;
+    color: @fg1;
+    border: 0;
+}
+
+#network {
+    color: @purple;
+}
+
+#custom-archicon {
+    color: @blue;
+    margin: 0;
+}
+
+#custom-notification {
+    color: @yellow;
+}
+#pulseaudio,
+#clock {
+    color: @fg0;
+}
+
+#cpu {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-width: 50px;
+    margin-right: 0px;
+    padding-right: 10px;
+    padding-left: 15px;
+    color: @yellow
+}
+#memory {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    min-width: 40px;
+    margin-left: 0px;
+    padding-left: 0px;
+    color: @aqua;
+}
+
+#tray {
+    background-color: rgba(0, 0, 0, 0);}
