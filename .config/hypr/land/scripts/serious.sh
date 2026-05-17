@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STATE_FILE="$HOME/.config/hypr/hyprland/toggleable_states/serious_mode"
+STATE_FILE="$HOME/.config/hypr/land/toggleable_states/serious_mode"
 
 props=(
     "general:gaps_in"
@@ -12,11 +12,24 @@ props=(
 
 if [ -f "$STATE_FILE" ]; then
     source $STATE_FILE
-    for prop in "${!toStore[@]}"; do
-	hyprctl keyword $prop ${toStore[$prop]}
-	
-    done
-    rm "$STATE_FILE"
+	#    for prop in "${!toStore[@]}"; do
+	# part1=$(echo "$prop" | cut -d':' -f1)
+	# part2=$(echo "$prop" | cut -d':' -f2)
+	# hyprctl eval "hl.config({ $part1 = { $part2 = ${toStore[$prop]} } })"
+	# notify-send "hl.config({ $part1 = { $part2 = ${toStore[$prop]} } })"
+	# hyprctl keyword $prop ${toStore[$prop]}
+	#    done
+	# read -d '\n' eval_line << EndOfText
+	# hl.config({
+	# general = {
+	# gaps_in = 9
+	# }
+	# })
+	# EndOfText
+	hyprctl eval << EOF
+	    dil
+	EOF
+
     notify-send "serious mode is off bruh 🥀"
     pkill waybar 
     waybar
