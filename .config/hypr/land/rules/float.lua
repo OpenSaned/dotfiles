@@ -3,7 +3,6 @@ hl.window_rule({ match = { title = "Close Firefox" }, float = true })
 hl.window_rule({ match = { class = "org.Waytrogen.Waytrogen" }, float = true })
 hl.window_rule({ match = { class = "org.gnome.Calculator" }, float = true })
 
-
 hl.window_rule({
   name = "pavucontrol",
   match = {

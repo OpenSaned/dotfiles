@@ -6,8 +6,7 @@
 hl.config({
     general = {
         gaps_in  = 3,
-        -- gaps_out = { 5, 10, 10, 10 },
-	gaps_out = 10,
+        gaps_out = { top = 5, bottom = 10, left = 10, right = 10 },
 
         border_size = 0,
 
@@ -84,6 +83,7 @@ hl.animation({ leaf = "workspaces",    enabled = true,  speed = 1.94, bezier = "
 hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 1.21, bezier = "almostlinear", style = "fade" })
 hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 1.94, bezier = "almostlinear", style = "fade" })
 hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "quick" })
+hl.animation({ leaf = "monitorAdded",  enabled = false,  speed = 7,    bezier = "quick" })
 
 
 

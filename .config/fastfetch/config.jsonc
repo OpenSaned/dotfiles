@@ -61,6 +61,17 @@
             "key": "󰝚 ",
             "keyColor": "33",
         },
+        {
+            "type": "btrfs",
+            "key": " ",
+            "keyColor": "33",
+	    "format": "{allocated} / {total}"
+        },
+	{
+            "type": "command",
+	    "key": " ",
+	    "text": "btrfs filesystem usage / | awk '/^\\s*Used:/{u=$2} /Free \\(estimated\\):/{f=$3} END{printf \"   \\033[90m%s data\\033[0m   \\033[32m+%s free\\033[0m\\n\",u,f}'",
+        },
         "break",
         "colors",
         "break",

@@ -7,6 +7,7 @@ vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.laststatus = 3
+vim.opt.wrap = false
 
 vim.o.confirm = true
 

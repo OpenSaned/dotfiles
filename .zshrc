@@ -25,6 +25,11 @@ alias vim='nvim'
 alias cat='bat'
 alias sudo='sudo '
 alias nvim=~/.local/bin/padded_nvim.sh
+#fm              -> nemo .
+#fm ~/Documents  -> nemo ~/Documents
+fm() {
+    nohup nemo "${1:-.}" >/dev/null 2>&1
+}
 
 pathadd() {
     newelement=${1%/}

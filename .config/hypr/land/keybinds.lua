@@ -1,24 +1,20 @@
-local serious = require('land.serious')
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
 
+local toggleSerious = require('land.serious')
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
-local function dam()
-    hl.dsp.exec_cmd("notify-send hi")
-end
 
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 
 -- Main Controls
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
+-- hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle", mode = "maximized"}))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ action = "toggle", mode = "fullscreen"}))
-hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd("~/.config/hypr/land/scripts/serious.sh"))
--- hl.bind(mainMod .. " + SHIFT + D", dam)
+hl.bind(mainMod .. " + SHIFT + D", toggleSerious) -- Toggle Serious Mode
 
 -- Apps
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
@@ -26,6 +22,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("nemo"))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zapzap"))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("firefox --private-window"))
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("vesktop"))
 
 -- Launchers
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("kitty --class clipse -e clipse"))
