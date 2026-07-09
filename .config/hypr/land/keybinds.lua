@@ -29,9 +29,9 @@ hl.bind(mainMod .. " + CTRL + Y", hl.dsp.exec_cmd("firefox --new-tab https://you
 
 -- Launchers
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("kitty --class clipse -e clipse"))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/rofi/launchers/type-2/launcher.sh"))
-hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("~/.config/rofi/powermenu/type-1/powermenu.sh"))
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("~/.config/rofi/powermenu/type-1/powermenu.sh"))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/rofi/scripts/launcher"))
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("~/.config/rofi/scripts/powermenu"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("~/.config/rofi/scripts/powermenu"))
 hl.bind(mainMod .. " + semicolon", hl.dsp.exec_cmd("rofi -show emoji"))
 hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("killall -9 waybar && waybar &"))
 -- bind = $mainMod SHIFT, K, exec, killall -9 waybar && waybar --config ~/.config/waybar/serious/config.jsonc --style ~/.config/waybar/serious/style.css &		# Reload Waybar 
