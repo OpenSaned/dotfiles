@@ -22,7 +22,10 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("nemo"))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zapzap"))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("firefox --private-window"))
-hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("vesktop"))
+hl.bind(mainMod .. " + CTRL + V", hl.dsp.exec_cmd("vesktop"))
+hl.bind(mainMod .. " + CTRL + I", hl.dsp.exec_cmd("firefox --new-tab https://instagram.com/direct/inbox"))
+hl.bind(mainMod .. " + CTRL + R", hl.dsp.exec_cmd("firefox --new-tab https://reddit.com"))
+hl.bind(mainMod .. " + CTRL + Y", hl.dsp.exec_cmd("firefox --new-tab https://youtube.com"))
 
 -- Launchers
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("kitty --class clipse -e clipse"))

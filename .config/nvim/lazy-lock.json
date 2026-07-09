@@ -8,6 +8,7 @@
   "gruvbox-material": { "branch": "master", "commit": "cc47341018320a2c82262958a1af889e5eeacd6e" },
   "gruvbox.nvim": { "branch": "main", "commit": "5e0a460d8e0f7f669c158dedd5f9ae2bcac31437" },
   "indent-blankline.nvim": { "branch": "master", "commit": "005b56001b2cb30bfa61b7986bc50657816ba4ba" },
+  "kitty-runner.nvim": { "branch": "main", "commit": "c7c1a7c8a409250f4d5802978831e825893e8b87" },
   "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
   "lazydev.nvim": { "branch": "main", "commit": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d" },
   "log-highlight.nvim": { "branch": "main", "commit": "b2e00cfd41ca94338265a595f3f3f423d9f9322e" },
