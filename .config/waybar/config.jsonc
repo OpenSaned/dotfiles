@@ -57,7 +57,7 @@
 	},
 	"scroll-step": 1,
 	// "reverse-mouse-scrolling": true,
-	"on-click": "pavucontrol",
+	"on-click": "pavucontrol -t 3",
 	"ignored-sinks": ["Easy Effects Sink"]
     },
     "network": {

@@ -36,10 +36,16 @@ hl.window_rule({
     float = true,
 })
 
+hl.window_rule({
+    name = "kdeconnect-presentation-pointer",
+    match = {
+        class = "org.kde.kdeconnect.daemon",
+    },
 
-
-
-
-
-
-
+    float = true,
+    size = {1000, 1000},
+    -- no_focus = true
+    -- no_blur = true,
+    -- fullscreen = true,
+    -- suppress_event = "fullscreen",
+})
